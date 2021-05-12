@@ -4,14 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "babel src -d dist"
+    "build": "babel src --extensions \".js,.ts,.jsx.tsx\" -d dist"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@babel/cli": "^7.13.14",
-    "@babel/core": "^7.13.14"
+    "@babel/core": "^7.13.14",
+    "@babel/preset-typescript": "^7.13.0"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.13.12"
